@@ -26,5 +26,25 @@ namespace JO_CIS3285_FinalProject_MusicForm
         {
 
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void addToSongsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addToPlaylistButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playRandomSongButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
