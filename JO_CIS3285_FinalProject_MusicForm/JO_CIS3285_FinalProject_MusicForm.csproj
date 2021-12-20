@@ -55,11 +55,13 @@
     <Compile Include="ISongRepository.cs" />
     <Compile Include="ISongs.cs" />
     <Compile Include="playlistItem.cs" />
+    <Compile Include="playlistList.cs" />
     <Compile Include="playlistListController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="randomSongItem.cs" />
     <Compile Include="songItem.cs" />
+    <Compile Include="songList.cs" />
     <Compile Include="songListController.cs" />
     <Compile Include="songRepository.cs" />
     <EmbeddedResource Include="Form1.resx">

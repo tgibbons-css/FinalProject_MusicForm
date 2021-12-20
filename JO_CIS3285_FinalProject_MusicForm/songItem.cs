@@ -13,6 +13,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         String songName;
         String albumName;
         String songGenre;
+        String description;
 
         public songItem(string artist, string song, string album, string genre)
         {
@@ -26,6 +27,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         public string Song { get => songName; set => songName = value; }
         public string Album { get => albumName; set => albumName = value; }
         public string Genre { get => songGenre; set => songGenre = value; }
+        public string Description { get => description; set => description = value; }
 
         string ISongs.artistName => this.artistName;
 
@@ -34,5 +36,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         string ISongs.albumName => this.albumName;
 
         string ISongs.songGenre => this.songGenre;
+
+        string ISongs.Description => this.description;
     }
 }

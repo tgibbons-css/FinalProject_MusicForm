@@ -12,6 +12,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         String songName { get; }
         String albumName { get; }
         String songGenre { get; }
+        String Description { get; }
         
     }
 }
