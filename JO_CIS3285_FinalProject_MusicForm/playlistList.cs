@@ -10,7 +10,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
     {
         List<playlistItem> playlist;
 
-        public playlistList()
+        public playlistList(List<songItem> songItems)
         {
             playlist = new List<playlistItem>();
         }

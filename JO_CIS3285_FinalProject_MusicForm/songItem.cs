@@ -14,6 +14,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         String albumName;
         String songGenre;
         String description;
+        private List<playlistItem> playlistItems;
 
         public songItem(string artist, string song, string album, string genre)
         {
@@ -23,12 +24,16 @@ namespace JO_CIS3285_FinalProject_MusicForm
             this.songGenre = genre;
         }
 
+        public songItem(List<playlistItem> playlistItems)
+        {
+            this.playlistItems = playlistItem;
+        }
+
         public string Name { get => artistName; set => artistName = value; }
         public string Song { get => songName; set => songName = value; }
         public string Album { get => albumName; set => albumName = value; }
         public string Genre { get => songGenre; set => songGenre = value; }
-        public string Description { get => description; set => description = value; }
-
+        public string Description { get => getDescription(); }
         string ISongs.artistName => this.artistName;
 
         string ISongs.songName => this.songName;
@@ -38,5 +43,16 @@ namespace JO_CIS3285_FinalProject_MusicForm
         string ISongs.songGenre => this.songGenre;
 
         string ISongs.Description => this.description;
+
+        public string toString()
+        {
+            return getDescription();
+        }
+
+        public string getDescription()
+        {
+            string description = "Artist name:" + Name + " Song name: " + Song + " Album:" + Album + " Genre:" + Genre;
+            return description;
+        }
     }
 }

@@ -13,6 +13,11 @@ namespace JO_CIS3285_FinalProject_MusicForm
             
         }
 
+        public void createItem(playlistItem playlist)
+        {
+
+        }
+
         public List<songItem> ReadAll()
         {
             

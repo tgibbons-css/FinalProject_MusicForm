@@ -10,14 +10,9 @@ namespace JO_CIS3285_FinalProject_MusicForm
     {
         List<songItem> songs;
 
-        public songList()
+        public songList(List<songItem> song)
         {
             songs = new List<songItem>();
-        }
-
-        public songList(List<songItem> newSongList)
-        {
-            songs = newSongList;
         }
 
         public void addItem(songItem newSongItem)
