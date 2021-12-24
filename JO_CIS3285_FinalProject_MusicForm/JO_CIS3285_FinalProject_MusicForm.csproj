@@ -53,7 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ISongRepository.cs" />
-    <Compile Include="ISongs.cs" />
+    <Compile Include="ISong.cs" />
     <Compile Include="playlistItem.cs" />
     <Compile Include="playlistList.cs" />
     <Compile Include="playlistListController.cs" />

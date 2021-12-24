@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JO_CIS3285_FinalProject_MusicForm
 {
-    interface ISongs
+    interface ISong
     {
         String artistName { get; }
         String songName { get; }

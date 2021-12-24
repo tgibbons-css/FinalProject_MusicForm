@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace JO_CIS3285_FinalProject_MusicForm
 {
-    class songItem : ISongs
+    class songItem : ISong
     {
 
+        /*
         String artistName;
         String songName;
         String albumName;
         String songGenre;
         String description;
         private List<playlistItem> playlistItems;
+
 
         public songItem(string artist, string song, string album, string genre)
         {
@@ -26,23 +28,36 @@ namespace JO_CIS3285_FinalProject_MusicForm
 
         public songItem(List<playlistItem> playlistItems)
         {
-            this.playlistItems = playlistItem;
+            //this.playlistItems = playlistItem;
+            this.playlistItems = playlistItems;   // Tom fix
+
+        }
+        */
+
+        public songItem(string artist, string song, string album, string genre)
+        {
+            this.artistName = artist;
+            this.songName = song;
+            this.albumName = album;
+            this.songGenre = genre;
         }
 
-        public string Name { get => artistName; set => artistName = value; }
-        public string Song { get => songName; set => songName = value; }
-        public string Album { get => albumName; set => albumName = value; }
-        public string Genre { get => songGenre; set => songGenre = value; }
+        public string artistName { get; private set; }
+        public string songName { get; private set; }
+        public string albumName { get; private set; }
+        public string songGenre { get; private set; }
         public string Description { get => getDescription(); }
-        string ISongs.artistName => this.artistName;
+        /*
+        string ISong.artistName => this.artistName;
 
-        string ISongs.songName => this.songName;
+        string ISong.songName => this.songName;
 
-        string ISongs.albumName => this.albumName;
+        string ISong.albumName => this.albumName;
 
-        string ISongs.songGenre => this.songGenre;
+        string ISong.songGenre => this.songGenre;
 
-        string ISongs.Description => this.description;
+        string ISong.Description => this.description;
+        */
 
         public string toString()
         {
@@ -51,7 +66,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
 
         public string getDescription()
         {
-            string description = "Artist name:" + Name + " Song name: " + Song + " Album:" + Album + " Genre:" + Genre;
+            string description = "Artist name:" + artistName + " Song name: " + songName + " Album:" + albumName + " Genre:" + songGenre;
             return description;
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JO_CIS3285_FinalProject_MusicForm
 {
-    class playlistItem : ISongs
+    class playlistItem : ISong
     {
         String artistName;
         String songName;
@@ -34,13 +34,13 @@ namespace JO_CIS3285_FinalProject_MusicForm
 
         public string Description { get => getDescription(); }
 
-        string ISongs.artistName => this.artistName;
+        string ISong.artistName => this.artistName;
 
-        string ISongs.songName => this.songName;
+        string ISong.songName => this.songName;
 
-        string ISongs.albumName => this.albumName;
+        string ISong.albumName => this.albumName;
 
-        string ISongs.songGenre => this.songGenre;
+        string ISong.songGenre => this.songGenre;
 
         public string toString()
         {

@@ -8,19 +8,27 @@ namespace JO_CIS3285_FinalProject_MusicForm
 {
     class songRepository : ISongRepository
     {
-        public void createItem(songItem song)
+        List<ISong> songs;   // Tom added
+
+        public songRepository()
         {
-            
+            songs = new List<ISong>();
         }
 
-        public void createItem(playlistItem playlist)
+        public void createItem(ISong song)
         {
-
+            songs.Add(song);
         }
 
-        public List<songItem> ReadAll()
+        /*
+         public void createItem(playlistItem playlist)
         {
-            
+
+        */
+
+        public List<ISong> ReadAll()
+        {
+            return songs;
         }
     }
 }

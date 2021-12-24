@@ -8,7 +8,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
 {
     interface ISongRepository
     {
-        void createItem(songItem song);
-        List<songItem> ReadAll();
+        void createItem(ISong song);
+        List<ISong> ReadAll();
     }
 }

@@ -12,9 +12,11 @@ namespace JO_CIS3285_FinalProject_MusicForm
 {
     public partial class Form1 : Form
     {
+        songListController songListCtrl;
         public Form1()
         {
             InitializeComponent();
+            songListCtrl = new songListController();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -34,7 +36,8 @@ namespace JO_CIS3285_FinalProject_MusicForm
 
         private void addToSongsButton_Click(object sender, EventArgs e)
         {
-
+            ISong newSong = songListCtrl.CreateSong(artistTextBox.Text.ToString(), songTextBox.Text.ToString(), albumTextBox.Text.ToString(), genreTextBox.Text.ToString());
+            songsList.Items.Add(newSong.Description);
         }
 
         private void addToPlaylistButton_Click(object sender, EventArgs e)

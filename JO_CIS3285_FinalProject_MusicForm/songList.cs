@@ -8,11 +8,11 @@ namespace JO_CIS3285_FinalProject_MusicForm
 {
     class songList
     {
-        List<songItem> songs;
+        List<ISong> songs;
 
-        public songList(List<songItem> song)
+        public songList(List<ISong> song)
         {
-            songs = new List<songItem>();
+            songs = new List<ISong>();
         }
 
         public void addItem(songItem newSongItem)

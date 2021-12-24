@@ -22,7 +22,7 @@ namespace JO_CIS3285_FinalProject_MusicForm
         {
             playlistItem newPlaylist = new playlistItem(name, song, album, genre);
             playlist.addItem(newPlaylist);
-            songRepository.createItem(newPlaylist);
+            //songRepository.createItem(newPlaylist);   // Tom
         }
     }
 }
